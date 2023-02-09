@@ -5,7 +5,7 @@ const cheerio = require('cheerio');
 
 const app = express();
 
-app.get('/scrape', (req, res) => {
+app.get('/latest-projects', (req, res) => {
     const url = process.env.URL;
 
     request(url, (error, response, html) => {
